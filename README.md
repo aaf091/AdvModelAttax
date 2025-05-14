@@ -39,8 +39,9 @@ This repository implements and evaluates several adversarial attack methods on a
 
 3. Download the 100-class ImageNet subset under `TestDataSet1/` and ensure `labels_list.json` is present.
 
+4. Run the Jupyter Notebook with suitable CUDA GPU (Nvidia V100 or A100)
 
-4. **Visualize samples**  
+5. **Visualize samples**  
    Within notebooks or scripts, use provided visualization functions to compare original vs. adversarial images.
 
 ---
