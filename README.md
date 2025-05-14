@@ -6,27 +6,21 @@ This repository implements and evaluates several adversarial attack methods on a
 
 ## 📚 Project Structure
 
-- **`adv_attacks.py`**  
+- **`Final.ipynb`**  
   Implements various adversarial attacks:
   - FGSM (Fast Gradient Sign Method)
   - PGD (Projected Gradient Descent)
   - Multipatch PGD
   - Targeted Patch PGD (fixed and subset targets)
   - Supercharged multi-patch variants (C1, C2)
-
-- **`dataset_utils.py`**  
-  Data loading utilities for a 100-class subset of ImageNet:
+  - Data loading utilities for a 100-class subset of ImageNet:
   - Mapping global labels (401–500) to WNIDs
   - Custom `SubsetDataset` and `FilteredImageFolder`
-
-- **`evaluate.py`**  
-  Evaluation scripts for computing Top-1 and Top-5 accuracy on adversarial sets and transfer to DenseNet-121.
+   - Evaluation scripts for computing Top-1 and Top-5 accuracy on adversarial sets and transfer to DenseNet-121.
 
 - **`adv_test_set*.pt`**  
   Saved adversarial test sets (500 images each) for each attack variant.
 
-- **`README.md`**  
-  Project overview, installation instructions, and results.
 
 ---
 
@@ -40,33 +34,13 @@ This repository implements and evaluates several adversarial attack methods on a
 
 2. (Optional) Set up a Python virtual environment:
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate
+   jupyter notebook
    ```
 
-3. Install requirements:
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. Download the 100-class ImageNet subset under `TestDataSet1/` and ensure `labels_list.json` is present.
 
-4. Download the 100-class ImageNet subset under `TestDataSet1/` and ensure `labels_list.json` is present.
 
----
-
-## ▶️ Usage
-
-1. **Generate adversarial examples**
-   ```bash
-   python adv_attacks.py --attack fgsm   # or pgd, multipatch, targeted, C1, C2
-   ```
-   This saves `adv_test_set3_<variant>.pt` for each variant.
-
-2. **Evaluate attacks on ResNet-34 & DenseNet-121**
-   ```bash
-   python evaluate.py --model resnet34   # or densenet121
-   ```
-
-3. **Visualize samples**  
+4. **Visualize samples**  
    Within notebooks or scripts, use provided visualization functions to compare original vs. adversarial images.
 
 ---
@@ -94,6 +68,7 @@ This repository implements and evaluates several adversarial attack methods on a
 
 - Goodfellow et al., “Explaining and Harnessing Adversarial Examples” (FGSM)
 - Madry et al., “Towards Deep Learning Models Resistant to Adversarial Attacks” (PGD)
+- ChatGPT
 
 ---
 
