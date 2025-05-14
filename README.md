@@ -70,6 +70,11 @@ This repository implements and evaluates several adversarial attack methods on a
 - Madry et al., “Towards Deep Learning Models Resistant to Adversarial Attacks” (PGD)
 - ChatGPT
 
+## Authors
+- Aadit Fadia
+- Isha Math
+- Riya Shah
+
 ---
 
 ## 🔗 License
