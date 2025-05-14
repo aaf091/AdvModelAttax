@@ -32,7 +32,7 @@ This repository implements and evaluates several adversarial attack methods on a
    cd AdvModelAttax
    ```
 
-2. (Optional) Set up a Python virtual environment:
+2. Open Jupyter Notebook:
    ```bash
    jupyter notebook
    ```
