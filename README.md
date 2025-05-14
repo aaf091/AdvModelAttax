@@ -1,6 +1,6 @@
 # Adversarial Attack Benchmark on ImageNet Subset
 
-This repository implements and evaluates several adversarial attack methods on a 100-class subset of ImageNet, focusing on patch-based and standard \(L_\infty\) attacks against ResNet-34 and transferability to DenseNet-121.
+This repository implements and evaluates several adversarial attack methods on a 100-class subset of ImageNet, focusing on patch-based and standard L∞  attacks against ResNet-34 and transferability to DenseNet-121.
 
 ---
 
